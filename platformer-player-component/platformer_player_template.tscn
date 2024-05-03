@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5n5taue4emj7"]
+
+[ext_resource type="Script" path="res://platformer_player_template.gd" id="1_04bih"]
+
+[node name="PlatformerMovementComponent" type="Node"]
+script = ExtResource("1_04bih")
+
+[node name="CoyoteBuffer" type="Timer" parent="."]
+
+[node name="JumpBuffer" type="Timer" parent="."]
