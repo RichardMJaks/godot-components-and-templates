@@ -20,11 +20,11 @@ var _jump_input_in_buffer : bool = false
 #endregion
 
 #region Player Stats
-@export var acceleration_time = 0
-@export var jump_height = 0
-@export var move_speed = 0
-@export var wall_climb_speed = 0
-@export var _fall_gravity_reduction_multiplier = 0
+@export var acceleration_time = 0.01
+@export var jump_height = 0.01
+@export var move_speed = 0.01
+@export var wall_climb_speed = 0.01
+@export var _fall_gravity_reduction_multiplier = 0.01
 #endregion
 
 func _ready():
@@ -110,7 +110,7 @@ func _buffer_jump_input() -> void:
 #endregion
 
 #region Timer timeouts
-func _on_coyote_timeout():
+func _on_coyote_buffer_timeout():
 	_coyote_in_buffer = false
 
 func _on_jump_buffer_timeout():
