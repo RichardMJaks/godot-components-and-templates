@@ -20,7 +20,7 @@ func _ready():
 	Input.get_axis("move_dash", "move_dash")
 	
 	_timer_dash_duration.wait_time = dash_duration
-	_timer_dash_input_buffer = owner.input_buffer_length
+	_timer_dash_input_buffer.wait_time = owner.input_buffer_length
 
 func _physics_process(_delta):
 	if owner.is_on_floor():

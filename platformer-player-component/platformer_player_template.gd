@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 class_name Player
 
 # TODO: Controlled jump height option
