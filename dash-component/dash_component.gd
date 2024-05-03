@@ -57,6 +57,7 @@ func _buffer_dash_input() -> void:
 
 func _on_dash_timer_timeout():
 	dashing = false
+	# TODO: Handle how dash will be finished
 
 func _on_dash_buffer_timeout():
 	_dash_input_in_buffer = false
